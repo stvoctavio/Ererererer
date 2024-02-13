@@ -1,0 +1,14 @@
+import random
+
+caracteres = "qwertyuiopasdfghjklñzxcvbnm1234567890!$?¡¿="
+
+def createPassword():
+    ask = int(input("introdusca la cantidad de caracteres (del 8 al 12)"))
+    password = ""
+
+    for i in range(ask):
+        Er = random.choice(caracteres)
+        password += Er
+    print("Su contraseña es:", password)
+
+createPassword()
